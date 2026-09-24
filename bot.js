@@ -4,6 +4,11 @@
 //   /time current      -> abhi ke time se AGLA (next) lecture, same format me
 //   /time monday..sunday (bonus) -> us din ka timetable
 //
+// Login: agar Railway env var PHONE_NUMBER set hai (e.g. 919876543210 — country
+// code ke saath, + ya 0 nahi lagana), to QR ki jagah ek 8-digit PAIRING CODE
+// milega jo WhatsApp app me "Link with phone number" option me daalna hai.
+// (QR terminal me scan karna mushkil hota hai, pairing code OTP jaisa aasan hai.)
+//
 // Setup: README.md dekho
 
 const { Client, LocalAuth } = require('whatsapp-web.js');
@@ -15,6 +20,9 @@ const timetable = JSON.parse(fs.readFileSync(path.join(__dirname, 'timetable.jso
 
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+const PHONE_NUMBER = process.env.PHONE_NUMBER; // e.g. "919876543210", no + no leading 0
+let pairingCodeRequested = false;
+
 const client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer: {
@@ -24,9 +32,29 @@ const client = new Client({
   }
 });
 
-client.on('qr', (qr) => {
-  console.log('Scan this QR code with WhatsApp (Linked Devices):');
-  qrcode.generate(qr, { small: true });
+client.on('qr', async (qr) => {
+  if (PHONE_NUMBER) {
+    // Pairing-code (OTP-jaisa) login — QR ignore karo
+    if (!pairingCodeRequested) {
+      pairingCodeRequested = true;
+      try {
+        const code = await client.requestPairingCode(PHONE_NUMBER);
+        console.log('================================');
+        console.log('  WhatsApp PAIRING CODE:', code);
+        console.log('  WhatsApp app kholo -> Settings -> Linked Devices ->');
+        console.log('  Link a Device -> "Link with phone number instead" ->');
+        console.log('  yeh code daalo.');
+        console.log('================================');
+      } catch (err) {
+        console.error('Pairing code error:', err.message);
+        console.log('Fallback: neeche wala QR scan karo.');
+        qrcode.generate(qr, { small: true });
+      }
+    }
+  } else {
+    console.log('Scan this QR code with WhatsApp (Linked Devices):');
+    qrcode.generate(qr, { small: true });
+  }
 });
 
 client.on('ready', () => {
