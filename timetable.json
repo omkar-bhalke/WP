@@ -1,0 +1,117 @@
+{
+  "college": "Dr.D.Y. Patil Technical Campus - Department of Engineering Science",
+  "division": "A",
+  "semester": 1,
+  "academicYear": "2026-27",
+  "breaks": [
+    { "time": "11:00-11:10", "label": "Short Break" },
+    { "time": "12:50-13:40", "label": "Lunch Break" }
+  ],
+  "schedule": {
+    "Monday": [
+      { "start": "09:10", "end": "11:00", "entries": [
+        { "batch": "A-11", "subject": "Engineering Physics (PHY) LAB", "faculty": "Prof. Komal Belhekar (KB)", "location": "A-11 PHY LAB" },
+        { "batch": "A-22", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "A-22 EM LAB" }
+      ]},
+      { "start": "11:10", "end": "12:00", "entries": [
+        { "batch": "All", "subject": "Engineering Mathematics-1 (M-1)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "601" }
+      ]},
+      { "start": "12:00", "end": "12:50", "entries": [
+        { "batch": "All", "subject": "Basic Electrical Engineering (BEE)", "faculty": "Prof. Atariksh Patil (AP)", "location": "601" }
+      ]},
+      { "start": "13:40", "end": "14:35", "entries": [
+        { "batch": "All", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "601" }
+      ]},
+      { "start": "14:35", "end": "15:30", "entries": [
+        { "batch": "All", "subject": "Engineering Physics (PHY)", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "601" }
+      ]},
+      { "start": "15:30", "end": "16:20", "entries": [
+        { "batch": "All", "subject": "PCS", "faculty": "(SS)", "location": "601" }
+      ]}
+    ],
+    "Tuesday": [
+      { "start": "09:10", "end": "10:10", "entries": [
+        { "batch": "All", "subject": "Basic Electrical Engineering (BEE)", "faculty": "Prof. Atariksh Patil (AP)", "location": "601" }
+      ]},
+      { "start": "10:10", "end": "11:00", "entries": [
+        { "batch": "All", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "601" }
+      ]},
+      { "start": "11:10", "end": "12:50", "entries": [
+        { "batch": "A-11", "subject": "Engineering Mathematics-1 Tutorial (EM-I T)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "A-11 CR No. 605" },
+        { "batch": "A-22", "subject": "Basic Electrical Engineering (BEE) LAB", "faculty": "Prof. Atariksh Patil (AP)", "location": "A-22 BEE LAB" }
+      ]},
+      { "start": "13:40", "end": "14:35", "entries": [
+        { "batch": "All", "subject": "Fundamentals of Programming Language (FPL)", "faculty": "Prof. Prashant Raut (PR)", "location": "601" }
+      ]},
+      { "start": "14:35", "end": "15:30", "entries": [
+        { "batch": "All", "subject": "Engineering Physics (PHY)", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "601" }
+      ]},
+      { "start": "15:30", "end": "16:20", "entries": [
+        { "batch": "All", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "601" }
+      ]}
+    ],
+    "Wednesday": [
+      { "start": "09:10", "end": "10:10", "entries": [
+        { "batch": "All", "subject": "Engineering Mathematics-1 (M-1)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "601" }
+      ]},
+      { "start": "10:10", "end": "11:00", "entries": [
+        { "batch": "All", "subject": "Engineering Physics (PHY)", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "601" }
+      ]},
+      { "start": "11:10", "end": "12:50", "entries": [
+        { "batch": "A-11", "subject": "Fundamentals of Programming Language (FPL) LAB", "faculty": "Prof. Prashant Raut (PR)", "location": "A-11 FPL LAB" },
+        { "batch": "A-22", "subject": "DTI", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "A-22 EM LAB" }
+      ]},
+      { "start": "13:40", "end": "14:35", "entries": [
+        { "batch": "All", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "602" }
+      ]},
+      { "start": "14:35", "end": "15:30", "entries": [
+        { "batch": "All", "subject": "Basic Electrical Engineering (BEE)", "faculty": "Prof. Atariksh Patil (AP)", "location": "602" }
+      ]},
+      { "start": "15:30", "end": "16:20", "entries": [
+        { "batch": "All", "subject": "GFM Lecture", "faculty": "-", "location": "602" }
+      ]}
+    ],
+    "Thursday": [
+      { "start": "09:10", "end": "11:00", "entries": [
+        { "batch": "A-11", "subject": "Engineering Physics (PHY) LAB", "faculty": "Prof. Komal Belhekar (KB)", "location": "A-11 PHY LAB" },
+        { "batch": "A-22", "subject": "Engineering Mechanics (EM)", "faculty": "Prof. Rahul Sawant (RS)", "location": "A-22 EM LAB" }
+      ]},
+      { "start": "11:10", "end": "12:00", "entries": [
+        { "batch": "All", "subject": "Engineering Physics (PHY)", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "602" }
+      ]},
+      { "start": "12:00", "end": "12:50", "entries": [
+        { "batch": "All", "subject": "Engineering Mathematics-1 (M-1)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "602" }
+      ]},
+      { "start": "13:40", "end": "14:35", "entries": [
+        { "batch": "All", "subject": "Basic Electrical Engineering (BEE)", "faculty": "Prof. Atariksh Patil (AP)", "location": "602" }
+      ]},
+      { "start": "14:35", "end": "15:30", "entries": [
+        { "batch": "All", "subject": "Fundamentals of Programming Language (FPL)", "faculty": "Prof. Prashant Raut (PR)", "location": "602" }
+      ]},
+      { "start": "15:30", "end": "16:20", "entries": [
+        { "batch": "All", "subject": "CCA", "faculty": "-", "location": "602" }
+      ]}
+    ],
+    "Friday": [
+      { "start": "09:10", "end": "11:00", "entries": [
+        { "batch": "A-11", "subject": "DTI", "faculty": "Dr. Abhijeet D. Shinde (AS)", "location": "A-11 EG HALL" },
+        { "batch": "A-22", "subject": "Fundamentals of Programming Language (FPL) LAB", "faculty": "Prof. Prashant Raut (PR)", "location": "A-22 FPL LAB" }
+      ]},
+      { "start": "11:10", "end": "12:00", "entries": [
+        { "batch": "All", "subject": "Fundamentals of Programming Language (FPL)", "faculty": "Prof. Prashant Raut (PR)", "location": "605" }
+      ]},
+      { "start": "12:00", "end": "12:50", "entries": [
+        { "batch": "All", "subject": "Engineering Mathematics-1 (M-1)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "605" }
+      ]},
+      { "start": "13:40", "end": "15:30", "entries": [
+        { "batch": "A-11", "subject": "Basic Electrical Engineering (BEE) LAB", "faculty": "Prof. Atariksh Patil (AP)", "location": "A-11 BEE LAB" },
+        { "batch": "A-22", "subject": "Engineering Mathematics-1 Tutorial (EM-I T)", "faculty": "Prof. Ramkrushna Chavan (RC)", "location": "A-22 EM LAB" }
+      ]},
+      { "start": "15:30", "end": "16:20", "entries": [
+        { "batch": "All", "subject": "CCA", "faculty": "-", "location": "601" }
+      ]}
+    ],
+    "Saturday": [],
+    "Sunday": []
+  }
+}
