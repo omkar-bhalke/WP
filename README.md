@@ -1,9 +1,10 @@
 # WhatsApp Timetable Bot (Division A, Sem-1)
 
 Group me:
-- `/time` → **aaj ka pura timetable**: har lecture ka Subject → Time → Teacher → Location → Batch (isi order me).
-- `/time current` → abhi ke time se **jo agla (next) lecture hoga**, wahi ek format me.
-- Bonus: `/time monday`, `/time friday` etc. — kisi bhi din ka poora schedule.
+- `/time` → **today's full timetable**: Subject → Time → Teacher → Location → Batch, with today's date & day shown.
+- `/time current` → next lecture from the **actual current time**.
+- `/time 3:20 PM` → next lecture from **any time you type** (today).
+- `/time monday` (or tuesday/wednesday/thursday/friday) → that day's full timetable, with the correct upcoming date.
 
 ---
 
