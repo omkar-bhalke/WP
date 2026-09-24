@@ -2,9 +2,7 @@
 
 Group me:
 - `/time` → **today's full timetable**: Subject → Time → Teacher → Location → Batch, with today's date & day shown.
-- `/time current` → next lecture from the **actual current time**.
-- `/time 3:20 PM` → next lecture from **any time you type** (today).
-- `/time monday` (or tuesday/wednesday/thursday/friday) → that day's full timetable, with the correct upcoming date.
+- `/time next` → details of the **next lecture** from right now (with date & day).
 
 ---
 
